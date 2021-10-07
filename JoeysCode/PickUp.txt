@@ -1,0 +1,7 @@
+//Anything he asks you to do in the inspector just write down in note pad as a comment
+
+//Right Click create empty
+//Pull in front of character
+//Rename GameObject to destination
+//Turn off gravity in Rigidbody
+//Parent the object with object itself
