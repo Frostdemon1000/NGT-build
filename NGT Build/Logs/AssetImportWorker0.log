@@ -15,11 +15,11 @@ C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59790
+54247
 Successfully changed project path to: C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build
 C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 73.13 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 72.21 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,21 +35,21 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001940 seconds.
+Registered in 0.001906 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 73.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 74.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.224 seconds
+- Completed reload, in  1.208 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002284 seconds.
+Registered in 0.002266 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -63,42 +63,344 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3073 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 114.8 MB.
 System memory in use after: 115.0 MB.
 
 Unloading 86 unused Assets to reduce memory usage. Loaded Objects now: 3512.
-Total: 2.275700 ms (FindLiveObjects: 0.233000 ms CreateObjectMapping: 0.163200 ms MarkObjects: 1.702900 ms  DeleteObjects: 0.175500 ms)
+Total: 2.197600 ms (FindLiveObjects: 0.225600 ms CreateObjectMapping: 0.144200 ms MarkObjects: 1.648600 ms  DeleteObjects: 0.178400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.004307 seconds 
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(dcb81b08c419f484b90a27ad2260be74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(dcb81b08c419f484b90a27ad2260be74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe14f6b418519f87cb0a6842667a919e') in 0.005793 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.318943 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(c9beb6900f275a6468675a6a9752e02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(c9beb6900f275a6468675a6a9752e02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c6c05bc15d9d67fae85ee4580391d4') in 0.001412 seconds 
+  Time since last request: 93.436674 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(9498d3f7c4d1a4e429fbdec054ef88bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(9498d3f7c4d1a4e429fbdec054ef88bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3e27b2d3f3fba35ed9062fa2c7e2ee') in 0.001776 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.139004 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(4408a5acd48051947b8c493cad39e41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(4408a5acd48051947b8c493cad39e41c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eddcf9bd4b62f60cb8dfbdb43259d0be') in 0.034201 seconds 
+  Time since last request: 189.597061 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(898812b723847f242a5cf2b56d269cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(898812b723847f242a5cf2b56d269cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ba2f4255376721853da46b56bf582d') in 0.001627 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 95.235785 seconds.
-  path: Assets/Scripts/PlayerCamera.cs
-  artifactKey: Guid(7524343dc8ef29342a4a7b0f2b14a33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerCamera.cs using Guid(7524343dc8ef29342a4a7b0f2b14a33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e9659f841823180f2435a452e657a3') in 0.003736 seconds 
+  Time since last request: 43.041475 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(a797afa875882ee489b5b3c77c52a2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(a797afa875882ee489b5b3c77c52a2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abe4678fafeec4cd27720e9f739ec06') in 0.001525 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.226421 seconds.
-  path: Assets/Scripts/PlayerMovement.cs
-  artifactKey: Guid(426cda5bd7027b3428f38c6ecd944eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerMovement.cs using Guid(426cda5bd7027b3428f38c6ecd944eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b939c405eb3d332bbae3f444e183c808') in 0.001700 seconds 
+  Time since last request: 8.435584 seconds.
+  path: Assets/Animations/DoorController.controller
+  artifactKey: Guid(5708cedb2813cc0439d64d1348a26f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorController.controller using Guid(5708cedb2813cc0439d64d1348a26f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d2ef2b4f2361ea62b4c88b8004d7a38') in 0.029038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.436383 seconds.
+  path: Assets/Animations/Door.anim
+  artifactKey: Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Door.anim using Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745cc6e3d536ecde10aac0bb8182a83e') in 0.003887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.935646 seconds.
+  path: Assets/Animations/DoorOpen.anim
+  artifactKey: Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorOpen.anim using Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d7f71d45136d278fd33038d0789704') in 0.001885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.753246 seconds.
+  path: Assets/Animations/DoorClose.anim
+  artifactKey: Guid(e18b4aded8884a340a2f74a22f337978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorClose.anim using Guid(e18b4aded8884a340a2f74a22f337978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5d4c80beb7f6c1aaaed3dadb7516fb') in 0.001925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 743.526690 seconds.
+  path: Assets/Animations/Door.controller
+  artifactKey: Guid(4ee6abf8619829b4e8f0d6a19c3cb241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Door.controller using Guid(4ee6abf8619829b4e8f0d6a19c3cb241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58c888dd3bfb0be88d448a0d70cd9374') in 0.002404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.056272 seconds.
+  path: Assets/Animations/DoorOpen.anim
+  artifactKey: Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorOpen.anim using Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82917fd0f8b840ee7f3f57e99fd8690a') in 0.002493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.767561 seconds.
+  path: Assets/Animations/Door.controller
+  artifactKey: Guid(4ee6abf8619829b4e8f0d6a19c3cb241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Door.controller using Guid(4ee6abf8619829b4e8f0d6a19c3cb241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87374396ef1c89f2db4710e9be309777') in 0.002324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.274857 seconds.
+  path: Assets/Animations/DoorOpen.anim
+  artifactKey: Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorOpen.anim using Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79e7cbf463d42721d9af3f0b19ef084') in 0.001694 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002275 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3030 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3515.
+Total: 2.366800 ms (FindLiveObjects: 0.245400 ms CreateObjectMapping: 0.161100 ms MarkObjects: 1.942100 ms  DeleteObjects: 0.016800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 368.785116 seconds.
+  path: Assets/Animations/DoorClose.anim
+  artifactKey: Guid(e18b4aded8884a340a2f74a22f337978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorClose.anim using Guid(e18b4aded8884a340a2f74a22f337978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17af94f1c5c5344b0db629c707c04596') in 0.005710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.525757 seconds.
+  path: Assets/Animations/DoorOpen.anim
+  artifactKey: Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/DoorOpen.anim using Guid(ab71fa6eb2fcfe640a62e813225ce9de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a5251b9164beccf07198731297da56') in 0.002054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 141.956178 seconds.
+  path: Assets/Animations/Door.controller
+  artifactKey: Guid(4ee6abf8619829b4e8f0d6a19c3cb241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Door.controller using Guid(4ee6abf8619829b4e8f0d6a19c3cb241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911bc72007170f11be9baa6a0e5d9031') in 0.004003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 527.212300 seconds.
+  path: Assets/Scripts/DoorRaycast.cs
+  artifactKey: Guid(37bed572c66e85448af702c44e39a96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DoorRaycast.cs using Guid(37bed572c66e85448af702c44e39a96f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd40d745701470d00ee9b8f5e6af6c7') in 0.020815 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002356 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.858 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3031 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.2 MB.
+System memory in use after: 112.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3519.
+Total: 2.174800 ms (FindLiveObjects: 0.215800 ms CreateObjectMapping: 0.135800 ms MarkObjects: 1.802800 ms  DeleteObjects: 0.019400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.993034 seconds.
+  path: Assets/Scripts/MyDoorController.cs
+  artifactKey: Guid(72ca1f72443894b49aa06aeb5120952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MyDoorController.cs using Guid(72ca1f72443894b49aa06aeb5120952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e885f6e5ff0b92f6a08b052bf4a969af') in 0.007957 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002255 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3032 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.3 MB.
+System memory in use after: 112.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3523.
+Total: 3.110400 ms (FindLiveObjects: 0.233500 ms CreateObjectMapping: 0.154500 ms MarkObjects: 2.705600 ms  DeleteObjects: 0.015500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002356 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3032 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.3 MB.
+System memory in use after: 112.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3526.
+Total: 2.400300 ms (FindLiveObjects: 0.268100 ms CreateObjectMapping: 0.168700 ms MarkObjects: 1.946200 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002258 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.839 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3032 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.3 MB.
+System memory in use after: 112.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3529.
+Total: 2.106600 ms (FindLiveObjects: 0.218600 ms CreateObjectMapping: 0.139800 ms MarkObjects: 1.734000 ms  DeleteObjects: 0.012800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002260 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3032 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.3 MB.
+System memory in use after: 112.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3532.
+Total: 2.278700 ms (FindLiveObjects: 0.221100 ms CreateObjectMapping: 0.139500 ms MarkObjects: 1.897000 ms  DeleteObjects: 0.020000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 516.845876 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a98590f61e33058bf5f3f4aeed2485f') in 0.007124 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002243 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3032 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.3 MB.
+System memory in use after: 112.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3535.
+Total: 2.084900 ms (FindLiveObjects: 0.221300 ms CreateObjectMapping: 0.151400 ms MarkObjects: 1.698200 ms  DeleteObjects: 0.012900 ms)
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
