@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1370909585266282014}
   - component: {fileID: 1370909585266282009}
   - component: {fileID: 1370909585266282008}
-  m_Layer: 0
+  - component: {fileID: 3781030862285723022}
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -83,6 +84,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370909585266282011}
   m_Enabled: 1
+--- !u!114 &3781030862285723022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370909585266282011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004bae083b4c5f84aa9a47add05002c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _raycastRange: 2
 --- !u!1 &1370909585925132300
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +110,7 @@ GameObject:
   - component: {fileID: 1370909585925132301}
   - component: {fileID: 1370909585925132289}
   - component: {fileID: 1370909585925132290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerBod
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370909586353209878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370909586763275059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
