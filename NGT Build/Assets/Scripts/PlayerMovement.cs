@@ -18,6 +18,11 @@ public class PlayerMovement : MonoBehaviour
     private LayerMask _groundMask;
     private Vector3 _velocity;
 
+    private Vector3 _playerLastPos;
+
+    [SerializeField]
+    private AudioClip[] _footSteps;
+
     private bool _isGrounded;
 
     void Start()
@@ -35,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
             _velocity.y = -1f;
         }
 
+        FootSteps();
+
         float _horizontal = Input.GetAxis("Horizontal");
         float _vertical = Input.GetAxis("Vertical");
 
@@ -45,5 +52,15 @@ public class PlayerMovement : MonoBehaviour
         _velocity.y += _gravity * Time.deltaTime;
 
         _charControl.Move(_velocity * Time.deltaTime);
+    }
+
+    private void FootSteps()
+    {
+        if (_playerLastPos != gameObject.transform.position)
+        {
+            print("player moving");
+        }
+
+        _playerLastPos = gameObject.transform.position;
     }
 }

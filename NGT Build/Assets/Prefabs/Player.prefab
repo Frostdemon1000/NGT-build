@@ -192,6 +192,11 @@ MonoBehaviour:
   _groundMask:
     serializedVersion: 2
     m_Bits: 64
+  _footSteps:
+  - {fileID: 8300000, guid: dcea4c32e8707154586fde2e8f2fbef7, type: 3}
+  - {fileID: 8300000, guid: b557b034467938b49a065a1b66e2cfe4, type: 3}
+  - {fileID: 8300000, guid: 8c9d4fda77b2f5c40b366acddd3b75e5, type: 3}
+  - {fileID: 8300000, guid: 669a3a1b889c5454e8488687cb39bbdb, type: 3}
 --- !u!1 &1370909586353209873
 GameObject:
   m_ObjectHideFlags: 0
