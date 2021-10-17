@@ -27,26 +27,24 @@ public class PlayerRaycastScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward), Color.red, 2f);
             if (Physics.Raycast(_playerRay, out RaycastHit hit, _raycastRange, _layerMask))
             {
                 _tempObj = hit.transform.gameObject;
+                print(_tempObj.name);
+                CheckCollider(_tempObj);
             }
-            else { print("null"); return; }
-
-            print(_tempObj.name);
-            CheckCollider(_tempObj);
+            else { print(null); return; }
         }
     }
 
-    private void CheckCollider(GameObject _raycastHit)
+    private void CheckCollider(GameObject _hitObj)
     {
-        if (_raycastHit.CompareTag("Door"))
+        if (_hitObj.CompareTag("Door"))
         {
-            _raycastHit.GetComponentInParent<DoorScript>().PlayAnimation();
+            _hitObj.GetComponentInParent<DoorScript>().PlayAnimation();
         }
 
-        if (_raycastHit.CompareTag("Liftable"))
+        if (_hitObj.CompareTag("Liftable"))
         {
             
         }

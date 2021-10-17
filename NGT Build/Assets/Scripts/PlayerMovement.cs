@@ -23,11 +23,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private AudioClip[] _footSteps;
 
+    private AudioSource _plrAudioSrc;
+
     private bool _isGrounded;
+    private bool _footStepsPlaying = false;
+
 
     void Start()
     {
         _charControl = GetComponent<CharacterController>();
+        _plrAudioSrc = GetComponent<AudioSource>();
+        print(_footSteps.Length);
     }
 
 
@@ -56,11 +62,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void FootSteps()
     {
-        if (_playerLastPos != gameObject.transform.position)
+        if (_playerLastPos != gameObject.transform.position && _isGrounded)
         {
+            int _randomClipNum = Mathf.RoundToInt(Random.Range(0f, 3f));
+            print(_randomClipNum);
             print("player moving");
+
+            AudioClip clip = _footSteps[_randomClipNum];
+            if (!_footStepsPlaying)
+            {
+                _footStepsPlaying = true;
+                StartCoroutine(PlayFootStep(clip));
+            }
         }
 
         _playerLastPos = gameObject.transform.position;
+    }
+
+    private IEnumerator PlayFootStep(AudioClip clip)
+    {
+        float _randomPitch = Random.Range(0.9f, 1.1f);
+
+        _plrAudioSrc.clip = clip;
+        _plrAudioSrc.pitch = _randomPitch;
+        _plrAudioSrc.Play();
+
+        yield return new WaitForSeconds(0.4f);
+
+        _footStepsPlaying = false;
     }
 }
