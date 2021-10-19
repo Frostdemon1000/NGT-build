@@ -27,31 +27,31 @@ public class PlayerMovement : MonoBehaviour
 
     private bool _isGrounded;
     private bool _footStepsPlaying = false;
-
+    // Variables n' stuff
 
     void Start()
     {
-        _charControl = GetComponent<CharacterController>();
+        _charControl = GetComponent<CharacterController>(); // Declares component for variable
         _plrAudioSrc = GetComponent<AudioSource>();
-        print(_footSteps.Length);
     }
 
 
     void Update()
     {
-        _isGrounded = Physics.CheckSphere(_groundChecker.position, 0.4f, _groundMask);
+        _isGrounded = Physics.CheckSphere(_groundChecker.position, 0.2f, _groundMask); // Bool for if physics sphere is touching ground
+        print(_isGrounded);
 
-        if (_isGrounded && _velocity.y < 0f)
+        if (_isGrounded && _velocity.y < 0f) // Sets velocity to -1 if player grounded and velocity is less than 0
         {
             _velocity.y = -1f;
         }
 
-        FootSteps();
+        FootSteps(); // Calls footstep function
 
         float _horizontal = Input.GetAxis("Horizontal");
         float _vertical = Input.GetAxis("Vertical");
 
-        Vector3 _move = transform.right * _horizontal + transform.forward * _vertical;
+        Vector3 _move = transform.right * _horizontal + transform.forward * _vertical; 
 
         _charControl.Move(_move * _playerSpeed * Time.deltaTime);
 
@@ -65,8 +65,6 @@ public class PlayerMovement : MonoBehaviour
         if (_playerLastPos != gameObject.transform.position && _isGrounded)
         {
             int _randomClipNum = Mathf.RoundToInt(Random.Range(0f, 3f));
-            print(_randomClipNum);
-            print("player moving");
 
             AudioClip clip = _footSteps[_randomClipNum];
             if (!_footStepsPlaying)
