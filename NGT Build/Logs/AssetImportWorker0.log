@@ -1,0 +1,227 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19043.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16247 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53790
+Successfully changed project path to: C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build
+C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 83.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.7f1 (d91830b65d9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/d4.4s/Documents/GitHub/NGT-build/NGT Build/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon R7 450 (ID=0x682b)
+    Vendor:   ATI
+    VRAM:     4076 MB
+    Driver:   24.20.11020.3002
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002000 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 84.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.278 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002849 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 83.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.198 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3531 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 133.9 MB.
+
+Unloading 126 unused Assets to reduce memory usage. Loaded Objects now: 3970.
+Total: 3.188100 ms (FindLiveObjects: 0.370200 ms CreateObjectMapping: 0.305500 ms MarkObjects: 2.276900 ms  DeleteObjects: 0.234400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Mat&Textures/Textures/woodTexture.jpg
+  artifactKey: Guid(8089fe04cf8e21646933df99eb19d48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/woodTexture.jpg using Guid(8089fe04cf8e21646933df99eb19d48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8e0dc806e4a9622edd5537aabdea57') in 0.058583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Mat&Textures/Textures/grungeMetalTexture.jpg
+  artifactKey: Guid(403db3ab415c2974491d888d79888503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/grungeMetalTexture.jpg using Guid(403db3ab415c2974491d888d79888503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1b5a8e63da484b93cb6eb0c13a8896') in 0.006001 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.9 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3974.
+Total: 2.415000 ms (FindLiveObjects: 0.251700 ms CreateObjectMapping: 0.163800 ms MarkObjects: 1.989000 ms  DeleteObjects: 0.009900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.373102 seconds.
+  path: Assets/Mat&Textures/Textures/concreteTileSeamless.jpg
+  artifactKey: Guid(c0b4d85caba5c4d4fbd52582b6bae021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/concreteTileSeamless.jpg using Guid(c0b4d85caba5c4d4fbd52582b6bae021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b15cfd4e44a8a67e8369ba769d560d') in 0.010384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.274108 seconds.
+  path: Assets/Mat&Textures/Textures/barrelTextureMap.jpg
+  artifactKey: Guid(748cea0074a5d374e9529e2ece59215c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/barrelTextureMap.jpg using Guid(748cea0074a5d374e9529e2ece59215c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66141ad5668e8c45b2afed8ad87b3eb') in 0.006482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.378031 seconds.
+  path: Assets/Mat&Textures/Textures/concreteWall.jpg
+  artifactKey: Guid(a3a16100624d58d47bddec8d26e09b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/concreteWall.jpg using Guid(a3a16100624d58d47bddec8d26e09b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79d4acf508609103eb616d5556a9274') in 0.009348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.939717 seconds.
+  path: Assets/Mat&Textures/Textures/barrelTextureMap.jpg
+  artifactKey: Guid(748cea0074a5d374e9529e2ece59215c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/barrelTextureMap.jpg using Guid(748cea0074a5d374e9529e2ece59215c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f655a2a54950260534646c610271989') in 0.014620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.539024 seconds.
+  path: Assets/Mat&Textures/Textures/blueMetal.jpg
+  artifactKey: Guid(113f88bb8bbb4dd45a52ee1995b6a9a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/blueMetal.jpg using Guid(113f88bb8bbb4dd45a52ee1995b6a9a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d1d790189dc719e74e3dc5e3008272') in 0.029841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.068522 seconds.
+  path: Assets/Mat&Textures/Textures/dirtyWaterTexture.jpg
+  artifactKey: Guid(496499c6376327c4bb8667388d32c203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/dirtyWaterTexture.jpg using Guid(496499c6376327c4bb8667388d32c203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d695165a393a65de22ebdf40efc8507') in 0.005929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.976243 seconds.
+  path: Assets/Mat&Textures/Textures/concreteTileSeamless.jpg
+  artifactKey: Guid(c0b4d85caba5c4d4fbd52582b6bae021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/concreteTileSeamless.jpg using Guid(c0b4d85caba5c4d4fbd52582b6bae021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd70caa4726cb80a51954ad7271e97c') in 0.009004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.291449 seconds.
+  path: Assets/Mat&Textures/Textures/concreteWall.jpg
+  artifactKey: Guid(a3a16100624d58d47bddec8d26e09b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/concreteWall.jpg using Guid(a3a16100624d58d47bddec8d26e09b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a5c21a505fc97e6d9875771916ee18') in 0.009146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.418661 seconds.
+  path: Assets/Mat&Textures/Textures/grungeMetalTexture.jpg
+  artifactKey: Guid(403db3ab415c2974491d888d79888503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/grungeMetalTexture.jpg using Guid(403db3ab415c2974491d888d79888503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a286c8e72fa7b7bc3c453e3816c10a7d') in 0.012595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.454009 seconds.
+  path: Assets/Mat&Textures/Textures/woodTexture.jpg
+  artifactKey: Guid(8089fe04cf8e21646933df99eb19d48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/woodTexture.jpg using Guid(8089fe04cf8e21646933df99eb19d48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5af37614ab72d25f7829bbae7c26a2') in 0.012694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.585886 seconds.
+  path: Assets/Mat&Textures/Textures/woodTexture.jpg
+  artifactKey: Guid(8089fe04cf8e21646933df99eb19d48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mat&Textures/Textures/woodTexture.jpg using Guid(8089fe04cf8e21646933df99eb19d48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c175c14b5a84782f75e3d4e8ac800568') in 0.012453 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002855 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3489 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.8 MB.
+System memory in use after: 136.1 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4165.
+Total: 2.476200 ms (FindLiveObjects: 0.247800 ms CreateObjectMapping: 0.147100 ms MarkObjects: 2.063500 ms  DeleteObjects: 0.016600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003155 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\d4.4s\Documents\GitHub\NGT-build\NGT Build\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.931 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3482 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.7 MB.
+System memory in use after: 135.9 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 4168.
+Total: 2.958600 ms (FindLiveObjects: 0.313400 ms CreateObjectMapping: 0.186500 ms MarkObjects: 2.439100 ms  DeleteObjects: 0.018500 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
