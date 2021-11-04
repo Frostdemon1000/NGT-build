@@ -39,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _isGrounded = Physics.CheckSphere(_groundChecker.position, 0.2f, _groundMask); // Bool for if physics sphere is touching ground
-        print(_isGrounded);
 
         if (_isGrounded && _velocity.y < 0f) // Sets velocity to -1 if player grounded and velocity is less than 0
         {
