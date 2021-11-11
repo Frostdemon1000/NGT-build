@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float _playerSpeed = 5f;
 
-    private float _gravity = -9.81f;
+    private readonly float _gravity = -9.81f;
 
     [SerializeField]
     private LayerMask _groundMask;
@@ -29,14 +29,20 @@ public class PlayerMovement : MonoBehaviour
     private bool _footStepsPlaying = false;
     // Variables n' stuff
 
-    void Start()
+    private void Start()
     {
         _charControl = GetComponent<CharacterController>(); // Declares component for variable
         _plrAudioSrc = GetComponent<AudioSource>();
     }
 
 
-    void Update()
+    private void Update()
+    {
+        Sprint();
+        PlayerMove();
+    }
+
+    private void PlayerMove()
     {
         _isGrounded = Physics.CheckSphere(_groundChecker.position, 0.2f, _groundMask); // Bool for if physics sphere is touching ground
 
@@ -50,13 +56,25 @@ public class PlayerMovement : MonoBehaviour
         float _horizontal = Input.GetAxis("Horizontal");
         float _vertical = Input.GetAxis("Vertical");
 
-        Vector3 _move = transform.right * _horizontal + transform.forward * _vertical; 
+        Vector3 _move = transform.right * _horizontal + transform.forward * _vertical;
 
         _charControl.Move(_move * _playerSpeed * Time.deltaTime);
 
         _velocity.y += _gravity * Time.deltaTime;
 
         _charControl.Move(_velocity * Time.deltaTime);
+    }
+
+    private void Sprint() 
+    {
+        if (Input.GetKey(KeyCode.LeftShift)) 
+        {
+            _playerSpeed = 7f;
+        }
+        else 
+        {
+            _playerSpeed = 5f;
+        }
     }
 
     private void FootSteps()
