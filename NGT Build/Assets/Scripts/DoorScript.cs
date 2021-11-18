@@ -8,7 +8,7 @@ public class DoorScript : MonoBehaviour
 
     private Animator _doorAnim;
 
-    private bool _doorOpen = false;
+    public bool doorOpen = false;
     private bool _doorUsable = true;
     // Variables n stuff
 
@@ -25,19 +25,19 @@ public class DoorScript : MonoBehaviour
 
     private IEnumerator PlayAnim() // Does the thing
     {
-        if (!_doorOpen && _doorUsable)
+        if (!doorOpen && _doorUsable)
         {
             _doorUsable = false;
             _doorAnim.Play("DoorOpen", 0, 0f);
-            _doorOpen = true;
+            doorOpen = true;
             yield return new WaitForSeconds(1.5f);
             _doorUsable = true;
         }
-        else if (_doorOpen && _doorUsable)
+        else if (doorOpen && _doorUsable)
         {
             _doorUsable = false; 
             _doorAnim.Play("DoorClose", 0, 0f);
-            _doorOpen = false;
+            doorOpen = false;
             yield return new WaitForSeconds(1.5f);
             _doorUsable = true;
         }

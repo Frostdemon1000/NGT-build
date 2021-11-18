@@ -22,7 +22,10 @@ public class EnemyScript : MonoBehaviour
     {
         if (collision.collider.CompareTag("Door"))
         {
-            collision.collider.gameObject.GetComponentInParent<DoorScript>().PlayAnimation();
+            if (!collision.collider.gameObject.GetComponentInParent<DoorScript>().doorOpen)
+            {
+                collision.collider.gameObject.GetComponentInParent<DoorScript>().PlayAnimation();
+            }
         }
     }
 

@@ -33,7 +33,7 @@ public class PlayerRaycastScript : MonoBehaviour
                 print(_tempObj.name);
                 CheckCollider(_tempObj);
             }
-            else { print(null); return; }
+            else { return; }
         }
     }
 

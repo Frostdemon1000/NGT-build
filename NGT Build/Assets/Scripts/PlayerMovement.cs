@@ -27,6 +27,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool _isGrounded;
     private bool _footStepsPlaying = false;
+
+    public bool canMove = true;
+
     // Variables n' stuff
 
     private void Start()
@@ -38,8 +41,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Sprint();
-        PlayerMove();
+        if (canMove)
+        {
+            Sprint();
+            PlayerMove();
+        }
     }
 
     private void PlayerMove()

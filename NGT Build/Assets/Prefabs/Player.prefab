@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 1370909585925132301}
   - component: {fileID: 1370909585925132289}
   - component: {fileID: 1370909585925132290}
+  - component: {fileID: 8165281543020297427}
   - component: {fileID: 8028888298176679566}
   m_Layer: 8
   m_Name: PlayerBod
@@ -198,6 +199,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b557b034467938b49a065a1b66e2cfe4, type: 3}
   - {fileID: 8300000, guid: 8c9d4fda77b2f5c40b366acddd3b75e5, type: 3}
   - {fileID: 8300000, guid: 669a3a1b889c5454e8488687cb39bbdb, type: 3}
+  canMove: 1
+--- !u!114 &8165281543020297427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370909585925132300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db51427aece6af4e841ae8d78fc7f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &8028888298176679566
 AudioSource:
   m_ObjectHideFlags: 0

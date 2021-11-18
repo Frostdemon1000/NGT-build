@@ -21,6 +21,8 @@ public class PlayerCamera : MonoBehaviour
 
     private float _xRotation = 0f;
 
+    public bool canRotate = true;
+
 
     void Start()
     {
@@ -37,6 +39,14 @@ public class PlayerCamera : MonoBehaviour
     
     void Update()
     {
+        if (canRotate)
+        {
+            RotateCamera();
+        }
+    }
+
+    private void RotateCamera()
+    {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity; // Declares mouseX variable via Input Manager axis
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity; // Declares mouseY variable via Input Manager axis
 
@@ -49,7 +59,7 @@ public class PlayerCamera : MonoBehaviour
             _xRotation += mouseY;
         }
 
-        _xRotation =  Mathf.Clamp(_xRotation, -75f, 75f);
+        _xRotation = Mathf.Clamp(_xRotation, -75f, 75f);
 
         _mainCam.localRotation = Quaternion.Euler(_xRotation, 0f, 0f); // Rotates cam up & down based off "xRotation" variable
         _playerBody.Rotate(Vector3.up * mouseX); // Rotates entire player body left & right
