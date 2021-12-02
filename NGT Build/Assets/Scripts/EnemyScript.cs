@@ -7,16 +7,26 @@ public class EnemyScript : MonoBehaviour
 {
     private NavMeshAgent _navMeshAgent;
 
+    [SerializeField]
+    private EnemyStates _currentState = EnemyStates.Idle;
+
+    private enum EnemyStates
+    {
+        Idle,
+        Patrolling,
+        Chasing
+    }
+
+    [SerializeField]
+    private GameObject[] _patrolPoints;
+
 
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        StartCoroutine(EnemyPatrol());
     }
 
-    private void Update()
-    {
-
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -35,5 +45,24 @@ public class EnemyScript : MonoBehaviour
         {
             _navMeshAgent.SetDestination(other.gameObject.transform.position);
         }
+    }
+
+    private IEnumerator EnemyPatrol()
+    {
+        yield return new WaitForSeconds(10f);
+
+        if (_currentState == EnemyStates.Idle)
+        {
+            Vector3 targetPos;
+
+            _currentState = EnemyStates.Patrolling;
+
+            int newPoint = Mathf.RoundToInt(Random.Range(0f, _patrolPoints.Length));
+
+            _navMeshAgent.SetDestination(_patrolPoints[newPoint].transform.position);
+            targetPos = _patrolPoints[newPoint].transform.position;
+        }
+
+
     }
 }
