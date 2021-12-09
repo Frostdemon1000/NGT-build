@@ -44,25 +44,31 @@ public class EnemyScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _navMeshAgent.SetDestination(other.gameObject.transform.position);
+            _currentState = EnemyStates.Chasing;
+        }
+        else
+        {
+            _currentState = EnemyStates.Idle;
         }
     }
 
     private IEnumerator EnemyPatrol()
     {
-        yield return new WaitForSeconds(10f);
-
-        if (_currentState == EnemyStates.Idle)
+        while (true)
         {
-            Vector3 targetPos;
+            yield return new WaitForSeconds(10f);
 
-            _currentState = EnemyStates.Patrolling;
+            if (_currentState == EnemyStates.Idle)
+            {
+                Vector3 targetPos;
 
-            int newPoint = Mathf.RoundToInt(Random.Range(0f, _patrolPoints.Length));
+                _currentState = EnemyStates.Patrolling;
 
-            _navMeshAgent.SetDestination(_patrolPoints[newPoint].transform.position);
-            targetPos = _patrolPoints[newPoint].transform.position;
+                int newPoint = Mathf.RoundToInt(Random.Range(0f, _patrolPoints.Length));
+
+                _navMeshAgent.SetDestination(_patrolPoints[newPoint].transform.position);
+                targetPos = _patrolPoints[newPoint].transform.position;
+            }
         }
-
-
     }
 }
