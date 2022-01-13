@@ -177,6 +177,7 @@ MonoBehaviour:
   cameraInverted: 0
   _playerBody: {fileID: 1370909585925132288}
   _mainCam: {fileID: 1370909585266282014}
+  canRotate: 1
 --- !u!114 &1370909585925132290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db51427aece6af4e841ae8d78fc7f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _objDisplayText: {fileID: 0}
+  _interactDisplay: {fileID: 0}
 --- !u!82 &8028888298176679566
 AudioSource:
   m_ObjectHideFlags: 0
@@ -319,7 +322,7 @@ GameObject:
   - component: {fileID: 1370909586353209878}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
