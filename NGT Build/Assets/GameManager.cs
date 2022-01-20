@@ -4,9 +4,32 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int keysAmount = 3;
+    [SerializeField]
+    private GameObject keyCollectedNotification;
+
+    private readonly int keyAmount = 3;
     private int currentKeys = 0;
 
-    private bool generatorActive = false;
+    private bool playerCanLeave = false;
 
+    
+    public void KeyFound()
+    {
+        currentKeys++;
+
+        if (currentKeys >= keyAmount)
+        {
+            playerCanLeave = true;
+        }
+
+        StartCoroutine(KeyNotification());
+    }
+    
+
+    private IEnumerator KeyNotification()
+    {
+        keyCollectedNotification.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+        keyCollectedNotification.SetActive(false);
+    }
 }
