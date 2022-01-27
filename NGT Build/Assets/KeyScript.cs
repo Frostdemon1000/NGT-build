@@ -6,7 +6,6 @@ public class KeyScript : MonoBehaviour
 {
     private GameManager manager;
 
-    private bool canPickUp = false;
 
     private void Awake()
     {
@@ -20,14 +19,15 @@ public class KeyScript : MonoBehaviour
 
     private void CheckMouse()
     {
-        if (Input.GetMouseButtonDown(0) && canPickUp)
+        if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward));
 
-            if (Physics.Raycast(ray, out hit))
+            Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), Color.red, 1f);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, 5f))
             {
-                Debug.Log(hit);
+                Debug.Log(hit.collider.name);
 
                 if (hit.collider.name == transform.name)
                 {
@@ -37,21 +37,6 @@ public class KeyScript : MonoBehaviour
             }
 
         }
-    }
-
-
-    // Collision checks
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            canPickUp = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        canPickUp = false;
     }
 
 }

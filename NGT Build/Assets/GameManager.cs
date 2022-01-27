@@ -6,11 +6,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject keyCollectedNotification;
+    [SerializeField]
+    private GameObject exitDoor;
 
     private readonly int keyAmount = 3;
     private int currentKeys = 0;
-
-    private bool playerCanLeave = false;
 
     
     public void KeyFound()
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
         if (currentKeys >= keyAmount)
         {
-            playerCanLeave = true;
+            exitDoor.SetActive(true);
         }
 
         StartCoroutine(KeyNotification());
@@ -31,5 +31,10 @@ public class GameManager : MonoBehaviour
         keyCollectedNotification.SetActive(true);
         yield return new WaitForSeconds(2.5f);
         keyCollectedNotification.SetActive(false);
+    }
+
+    public void EndGame()
+    {
+        Debug.Log("Game over");
     }
 }

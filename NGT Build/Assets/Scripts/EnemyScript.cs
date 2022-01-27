@@ -69,7 +69,7 @@ public class EnemyScript : MonoBehaviour
             
             _currentState = EnemyStates.Patrolling;
             
-            int newPoint = Mathf.RoundToInt(Random.Range(0f, _patrolPoints.Length));
+            int newPoint = Mathf.RoundToInt(Random.Range(0f, _patrolPoints.Length - 1));
 
             targetPos = _patrolPoints[newPoint].transform.position;
             _navMeshAgent.SetDestination(targetPos);
