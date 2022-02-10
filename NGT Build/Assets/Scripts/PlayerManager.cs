@@ -31,7 +31,7 @@ public class PlayerManager : MonoBehaviour
     {
         _ray = new Ray(_plrCamera.transform.position, _plrCamera.transform.TransformDirection(Vector3.forward));
 
-        if (Physics.Raycast(_ray, out RaycastHit hit, 7f, _interactableLayer))
+        if (Physics.Raycast(_ray, out RaycastHit hit, 4f, _interactableLayer))
         {
             _objDisplayText.text = hit.collider.gameObject.name;
         }

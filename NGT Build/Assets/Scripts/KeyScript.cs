@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class KeyScript : MonoBehaviour
@@ -25,10 +23,11 @@ public class KeyScript : MonoBehaviour
 
             Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.TransformDirection(Vector3.forward), Color.red, 1f);
 
-            if (Physics.Raycast(ray, out RaycastHit hit, 5f))
-            {
-                Debug.Log(hit.collider.name);
+            LayerMask playerLayer;
+            playerLayer = LayerMask.GetMask("Player");
 
+            if (Physics.Raycast(ray, out RaycastHit hit, 4f, ~playerLayer))
+            {
                 if (hit.collider.name == transform.name)
                 {
                     manager.KeyFound();

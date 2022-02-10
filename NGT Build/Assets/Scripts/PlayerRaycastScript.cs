@@ -30,7 +30,6 @@ public class PlayerRaycastScript : MonoBehaviour
             if (Physics.Raycast(_playerRay, out RaycastHit hit, _raycastRange, _layerMask))
             {
                 _tempObj = hit.transform.gameObject;
-                print(_tempObj.name);
                 CheckCollider(_tempObj);
             }
             else { return; }
@@ -42,11 +41,6 @@ public class PlayerRaycastScript : MonoBehaviour
         if (_hitObj.CompareTag("Door"))
         {
             _hitObj.GetComponentInParent<DoorScript>().PlayAnimation();
-        }
-
-        if (_hitObj.CompareTag("Liftable"))
-        {
-            
         }
     }
 }

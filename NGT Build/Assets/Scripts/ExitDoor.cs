@@ -11,11 +11,12 @@ public class ExitDoor : MonoBehaviour
         manager = FindObjectOfType<GameManager>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
-            manager.EndGame();
+            manager.WinGame();
         }
     }
 }
