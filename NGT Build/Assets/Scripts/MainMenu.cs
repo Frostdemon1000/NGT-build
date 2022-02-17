@@ -6,9 +6,16 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private GameObject creditsButton;
     [SerializeField]
+    private GameObject quitButton;
+    [SerializeField]
     private GameObject creditsScreen;
     [SerializeField]
     private GameObject mainScreen;
+
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
 
     public void ToggleCredits()
     {
@@ -20,5 +27,10 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

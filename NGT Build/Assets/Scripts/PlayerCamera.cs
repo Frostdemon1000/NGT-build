@@ -43,6 +43,11 @@ public class PlayerCamera : MonoBehaviour
         {
             RotateCamera();
         }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            cameraInverted = !cameraInverted;
+        }
     }
 
     private void RotateCamera()

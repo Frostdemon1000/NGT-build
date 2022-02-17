@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +7,8 @@ public class PlayerManager : MonoBehaviour
     private Text _objDisplayText;
     [SerializeField]
     private Text _interactDisplay;
+    [SerializeField]
+    private GameObject flashlight;
 
 
     private Ray _ray;
@@ -25,6 +25,15 @@ public class PlayerManager : MonoBehaviour
     private void Update()
     {
         DisplayUpdate();
+        CheckInput();
+    }
+
+    private void CheckInput()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            flashlight.SetActive(!flashlight.activeInHierarchy);
+        }
     }
 
     private void DisplayUpdate()
@@ -41,5 +50,4 @@ public class PlayerManager : MonoBehaviour
             _interactDisplay.text = null;
         }
     }
-
 }

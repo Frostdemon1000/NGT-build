@@ -1,11 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyScript : MonoBehaviour
 {
+    private GameManager gameManager;
     private NavMeshAgent _navMeshAgent;
 
     [SerializeField]
@@ -21,9 +21,9 @@ public class EnemyScript : MonoBehaviour
     [SerializeField]
     private GameObject[] _patrolPoints;
 
-
     private void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         StartCoroutine(EnemyPatrol());
     }
@@ -42,6 +42,18 @@ public class EnemyScript : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("game over");
+            gameManager.GameOver();
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.CompareTag("Door"))
+        {
+            if (!collision.collider.gameObject.GetComponentInParent<DoorScript>().doorOpen)
+            {
+                collision.collider.gameObject.GetComponentInParent<DoorScript>().PlayAnimation();
+            }
         }
     }
 
@@ -75,5 +87,10 @@ public class EnemyScript : MonoBehaviour
             _navMeshAgent.SetDestination(targetPos);
             }
         
+    }
+
+    public void ChangeEnemySpeed(float value)
+    {
+        _navMeshAgent.speed = value;
     }
 }
