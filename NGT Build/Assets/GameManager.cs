@@ -10,10 +10,15 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject exitDoor;
     [SerializeField]
+    private GameObject pauseMenu;
+    [SerializeField]
     private Color threeKeysColor;
 
     private readonly int keyAmount = 3;
     private int currentKeys = 0;
+
+    private bool gamePaused = false;
+    private bool playerCanWin = false;
 
     private readonly string[] phrases =
     {
@@ -25,9 +30,35 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        PauseMenu();
+    }
+
+    private void PauseMenu()
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            PlayerCamera playerCamera = FindObjectOfType<PlayerCamera>();
+
+            if (!gamePaused)
+            {
+                gamePaused = true;
+                Time.timeScale = 0f;
+
+                Cursor.lockState = CursorLockMode.None;
+                playerCamera.canRotate = false;
+
+                pauseMenu.SetActive(true);
+            }
+            else
+            {
+                gamePaused = false;
+                Time.timeScale = 1f;
+
+                Cursor.lockState = CursorLockMode.Locked;
+                playerCamera.canRotate = true;
+
+                pauseMenu.SetActive(false);
+            }
         }
     }
 
@@ -47,9 +78,9 @@ public class GameManager : MonoBehaviour
     {
         EnemyScript enemyScript = FindObjectOfType<EnemyScript>();
 
-        enemyScript.ChangeEnemySpeed(4.5f);
+        enemyScript.ChangeEnemySpeed(5.5f);
         RenderSettings.ambientLight = threeKeysColor;
-        exitDoor.SetActive(true);
+        playerCanWin = true;
     }
 
     private IEnumerator KeyNotification()
@@ -71,11 +102,19 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        SceneManager.LoadScene(2);
+        if (playerCanWin)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     public void GameOver()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

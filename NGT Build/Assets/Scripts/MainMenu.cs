@@ -12,9 +12,30 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private GameObject mainScreen;
 
+    [Header("Camera stuff")]
+
+    [SerializeField]
+    private Transform plrCamera;
+
+    [SerializeField] [Min(1f)]
+    private float speed = 7.5f;
+
     private void Awake()
     {
+        Time.timeScale = 1f;
+
         Cursor.lockState = CursorLockMode.None;
+
+        if (speed < 1f)
+        {
+            speed = 7.5f;
+        }
+    }
+
+    private void Update()
+    {
+        Vector3 rotation = speed * Time.deltaTime * new Vector3(0f, 1f, 0f);
+        plrCamera.Rotate(rotation);
     }
 
     public void ToggleCredits()

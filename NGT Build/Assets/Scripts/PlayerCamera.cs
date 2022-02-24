@@ -43,11 +43,6 @@ public class PlayerCamera : MonoBehaviour
         {
             RotateCamera();
         }
-
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            cameraInverted = !cameraInverted;
-        }
     }
 
     private void RotateCamera()
@@ -68,5 +63,10 @@ public class PlayerCamera : MonoBehaviour
 
         _mainCam.localRotation = Quaternion.Euler(_xRotation, 0f, 0f); // Rotates cam up & down based off "xRotation" variable
         _playerBody.Rotate(Vector3.up * mouseX); // Rotates entire player body left & right
+    }
+
+    public void ToggleInversion(bool state)
+    {
+        cameraInverted = state;
     }
 }
