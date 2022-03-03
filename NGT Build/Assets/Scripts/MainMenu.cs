@@ -6,7 +6,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private GameObject creditsButton;
     [SerializeField]
-    private GameObject quitButton;
+    private GameObject helpButton;
+    [SerializeField]
+    private GameObject helpScreen;
     [SerializeField]
     private GameObject creditsScreen;
     [SerializeField]
@@ -43,6 +45,15 @@ public class MainMenu : MonoBehaviour
         creditsButton.SetActive(!creditsButton.activeInHierarchy);
         creditsScreen.SetActive(!creditsScreen.activeInHierarchy);
         mainScreen.SetActive(!mainScreen.activeInHierarchy);
+        helpButton.SetActive(!helpButton.activeInHierarchy);
+    }
+
+    public void ToggleHelp()
+    {
+        creditsButton.SetActive(!creditsButton.activeInHierarchy);
+        mainScreen.SetActive(!mainScreen.activeInHierarchy);
+        helpButton.SetActive(!helpButton.activeInHierarchy);
+        helpScreen.SetActive(!helpScreen.activeInHierarchy);
     }
 
     public void StartGame()

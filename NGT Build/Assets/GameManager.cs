@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
     {
         EnemyScript enemyScript = FindObjectOfType<EnemyScript>();
 
-        enemyScript.ChangeEnemySpeed(5.5f);
+        enemyScript.ChangeEnemySpeed(6.5f);
         RenderSettings.ambientLight = threeKeysColor;
         playerCanWin = true;
     }
