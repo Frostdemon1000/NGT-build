@@ -93,4 +93,11 @@ public class EnemyScript : MonoBehaviour
     {
         _navMeshAgent.speed = value;
     }
+
+    public void ChangeDetectionRange(float value)
+    {
+        SphereCollider collider = GetComponent<SphereCollider>();
+
+        collider.radius = value;
+    }
 }

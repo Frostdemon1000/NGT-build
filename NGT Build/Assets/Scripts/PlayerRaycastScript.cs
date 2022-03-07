@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerRaycastScript : MonoBehaviour
@@ -41,6 +39,11 @@ public class PlayerRaycastScript : MonoBehaviour
         if (_hitObj.CompareTag("Door"))
         {
             _hitObj.GetComponentInParent<DoorScript>().PlayAnimation();
+        }
+
+        if (_hitObj.CompareTag("FuseBox"))
+        {
+            _hitObj.GetComponent<FuseBox>().TogglePower();
         }
     }
 }
